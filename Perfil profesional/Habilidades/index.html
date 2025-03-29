@@ -57,4 +57,170 @@
             font-size: 1rem;
             font-weight: 600;
             color: var(--light);
-            text-decoration:
+            text-decoration: none;
+            margin: 0 15px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            padding: 8px 15px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        nav a:hover {
+            background: rgba(79, 172, 254, 0.3);
+            color: #fff;
+            transform: translateY(-2px);
+        }
+        
+        .container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            width: 85%;
+            max-width: 800px;
+            margin: 120px auto 60px;
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            text-align: left;
+            margin-top: 30px;
+        }
+        
+        .skill-category {
+            background: rgba(15, 52, 96, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid var(--primary);
+        }
+        
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        h3 {
+            color: var(--primary);
+            margin-top: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        ul {
+            padding-left: 20px;
+            list-style-type: none;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 25px;
+            color: var(--light);
+        }
+        
+        li:before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+        }
+        
+        @media (max-width: 768px) {
+            nav {
+                width: 100%;
+                text-align: center;
+                padding: 10px 0;
+            }
+            
+            nav a {
+                margin: 0 8px;
+                font-size: 0.9rem;
+                padding: 6px 10px;
+            }
+            
+            .container {
+                padding: 1.8rem;
+                margin: 100px auto 40px;
+                width: 90%;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .skills-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="../../">INICIO</a>
+        <a href="../sobre-mi/">SOBRE MÍ</a>
+        <a href="../habilidades/">HABILIDADES</a>
+        <a href="../proyectos/">PROYECTOS</a>
+        <a href="../contacto/">CONTACTO</a>
+    </nav>
+
+    <div class="container">
+        <h1>MIS HABILIDADES</h1>
+        
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Lenguajes de Programación</h3>
+                <ul>
+                    <li>Python (Avanzado)</li>
+                    <li>Java (Intermedio)</li>
+                    <li>JavaScript (Intermedio)</li>
+                    <li>SQL (Avanzado)</li>
+                </ul>
+            </div>
+            
+            <div class="skill-category">
+                <h3>Tecnologías Web</h3>
+                <ul>
+                    <li>HTML5 & CSS3</li>
+                    <li>React.js</li>
+                    <li>Node.js</li>
+                    <li>Express</li>
+                </ul>
+            </div>
+            
+            <div class="skill-category">
+                <h3>Redes y Telecomunicaciones</h3>
+                <ul>
+                    <li>Configuración de Routers y Switches</li>
+                    <li>Protocolos TCP/IP</li>
+                    <li>Seguridad de Redes</li>
+                    <li>Virtualización de Redes</li>
+                </ul>
+            </div>
+            
+            <div class="skill-category">
+                <h3>Bases de Datos</h3>
+                <ul>
+                    <li>MySQL</li>
+                    <li>MongoDB</li>
+                    <li>PostgreSQL</li>
+                    <li>Diseño de Bases de Datos</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
